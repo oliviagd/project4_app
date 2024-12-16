@@ -17,7 +17,7 @@ movie_id_to_title_mapping = dict(zip(movies['MovieIDm'], movies['Title']))
 movie_title_to_idmapping = dict(zip(movies['Title'], movies['MovieIDm']))
 
 app = dash.Dash(__name__)
-
+server = app.server
 app.layout = html.Div([
     html.H1("Movie Recommendation System", style={"textAlign": "center"}),
     
